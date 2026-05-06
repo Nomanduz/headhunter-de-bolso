@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Headhunter de Bolso — Velvet Navigator design system
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Brand: deep navy, refined gold, cool grays */
+    --background: 215 50% 8%;
+    --foreground: 40 25% 92%;
+
+    --card: 215 45% 11%;
+    --card-foreground: 40 25% 92%;
+
+    --popover: 215 45% 11%;
+    --popover-foreground: 40 25% 92%;
+
+    --primary: 42 55% 55%;
+    --primary-foreground: 215 50% 8%;
+
+    --secondary: 215 35% 18%;
+    --secondary-foreground: 40 20% 88%;
+
+    --muted: 215 30% 15%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 42 60% 60%;
+    --accent-foreground: 215 50% 8%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 40 25% 95%;
+
+    --border: 215 25% 22%;
+    --input: 215 30% 16%;
+    --ring: 42 55% 55%;
+
+    --radius: 0.875rem;
+
+    /* Brand specific */
+    --gold: 42 55% 55%;
+    --gold-soft: 42 45% 70%;
+    --gold-deep: 38 50% 42%;
+    --navy-deep: 215 55% 6%;
+    --navy: 215 50% 10%;
+    --navy-soft: 215 40% 16%;
+
+    /* Gradients */
+    --gradient-hero: radial-gradient(ellipse at top right, hsl(42 55% 55% / 0.08), transparent 60%),
+                     radial-gradient(ellipse at bottom left, hsl(215 60% 20% / 0.6), transparent 60%),
+                     linear-gradient(180deg, hsl(215 55% 7%), hsl(215 50% 9%));
+    --gradient-gold: linear-gradient(135deg, hsl(42 60% 62%), hsl(38 50% 45%));
+    --gradient-card: linear-gradient(160deg, hsl(215 40% 13%), hsl(215 45% 9%));
+
+    /* Shadows */
+    --shadow-gold: 0 20px 50px -20px hsl(42 55% 50% / 0.35);
+    --shadow-elegant: 0 30px 60px -25px hsl(215 80% 3% / 0.7);
+    --shadow-soft: 0 8px 24px -8px hsl(215 80% 3% / 0.5);
+
+    /* Motion */
+    --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    background: var(--gradient-hero);
+    background-attachment: fixed;
+    min-height: 100dvh;
+  }
+  h1, h2, h3, .font-serif {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .text-gold { color: hsl(var(--gold)); }
+  .bg-gold { background-color: hsl(var(--gold)); }
+  .border-gold { border-color: hsl(var(--gold)); }
+  .gradient-gold { background: var(--gradient-gold); }
+  .gradient-card { background: var(--gradient-card); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+}
