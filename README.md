@@ -1,7 +1,3 @@
-Claro, Carlos! Vou trazer novamente o \*\*README completo\*\* que você pode usar no repositório. Basta copiar este conteúdo para um arquivo chamado `README.md` dentro da pasta do projeto \*\*headhunter-de-bolso\*\*.  
-
-
-
 \---
 
 
