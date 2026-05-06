@@ -7,6 +7,7 @@
 🛠️ **Editor Lovable:** https://lovable.dev/projects/6260329e-1d47-4253-b495-8bd44d735791
 
 ---
+\---
 
 ## 📖 Sobre o projeto
 
