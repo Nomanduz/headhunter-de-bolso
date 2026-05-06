@@ -3,7 +3,7 @@
 > **Consultoria de carreira instantânea, prática e acionável.**
 > Identifique suas habilidades, descubra seu nível profissional (Júnior / Pleno / Sênior) e receba recomendações personalizadas de cargos e cursos — em menos de 10 minutos.
 
-🌐 **App publicado:** https://growth-scan-io.lovable.app
+🌐 **App publicado:** https://headhunter-de-bolso.lovable.app
 🛠️ **Editor Lovable:** https://lovable.dev/projects/6260329e-1d47-4253-b495-8bd44d735791
 
 ---

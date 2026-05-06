@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { TopNav } from "@/components/TopNav";
 import { MotivationalFooter } from "@/components/MotivationalFooter";
-import { Play, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { useAuthGuard } from "@/hooks/useAuthGuard";
 
 const Apresentacao = () => {
@@ -25,12 +25,16 @@ const Apresentacao = () => {
             Você vai responder 10 perguntas abertas. Não há respostas certas ou erradas — quanto mais sincero(a), mais preciso será o mapeamento que nossa IA fará da sua carreira.
           </p>
 
-          <div className="relative aspect-video max-w-2xl mx-auto rounded-2xl overflow-hidden gradient-card border border-gold/20 shadow-elegant flex items-center justify-center group cursor-pointer">
-            <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent" />
-            <div className="relative w-20 h-20 rounded-full gradient-gold flex items-center justify-center shadow-gold group-hover:scale-105 transition-transform">
-              <Play className="w-8 h-8 text-navy-deep ml-1" fill="currentColor" />
-            </div>
-            <span className="absolute bottom-4 right-4 text-xs text-muted-foreground">Vídeo • 1:00</span>
+          {/* Player de vídeo substituindo o card */}
+          <div className="relative aspect-video max-w-2xl mx-auto rounded-2xl overflow-hidden gradient-card border border-gold/20 shadow-elegant">
+            <video
+              className="w-full h-full object-cover"
+              controls
+              poster="/thumbnail.png" // opcional: imagem de capa
+            >
+              <source src="/apresentacao.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeo.
+            </video>
           </div>
 
           <div className="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto pt-4">

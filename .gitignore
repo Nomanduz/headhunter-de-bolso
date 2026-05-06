@@ -22,3 +22,22 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Ignorar arquivos compactados
+*.zip
+
+# Ignorar arquivos de backup
+*.rar
+*.tar
+*.gz
+
+# Ignorar logs
+*.log
+
+# Ignorar dependências do Node.js
+node_modules/
+
+# Ignorar builds
+dist/
+
+# Ignorar variáveis privadas
+.env
